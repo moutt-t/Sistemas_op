@@ -1,0 +1,10 @@
+GCC = gcc
+
+MODULO = modulo
+PROGRAMAS = mod_motta
+
+mod_motta:
+	$(GCC) $(MODULO).c -c
+	$(GCC) $@.c $(MODULO).o -o $@
+clear:
+	$(RM) $(PROGRAMAS) $(MODULO).o
