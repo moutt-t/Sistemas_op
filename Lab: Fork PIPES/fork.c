@@ -1,21 +1,19 @@
 /****************************************
 * Fecha: 08/10/2025
-* Autor: Carolina Ujueta
+* Autor: Juan Pablo Motta Talero 
 * Materia: Sistemas Operativos
-* Tema: Uso de la función FORK()
+* Tema: Usos de la función FORK()
 *****************************************/
 
 #include <unistd.h>   // Biblioteca necesaria para usar fork() y getpid()
-#include <stdio.h>    // Biblioteca estándar de entrada/salida
-#include <stdlib.h>   // Biblioteca estándar (malloc, exit, etc.)
+#include <stdio.h>    
+#include <stdlib.h>   
 
 /*
  * Función principal del programa.
  * Demuestra el uso básico de fork(), que se utiliza para crear procesos hijos.
  * Cada vez que se llama a fork(), el proceso actual se duplica:
- *  - El proceso padre recibe como valor de retorno el PID (ID del proceso) del hijo.
- *  - El proceso hijo recibe como valor de retorno 0.
- */
+*/
 int main (int argc, char *argv[]) {
 
     // Mensaje inicial indicando que el programa ha comenzado.
@@ -44,6 +42,5 @@ int main (int argc, char *argv[]) {
     // ya que después del fork, ambos procesos continúan ejecutando desde aquí.
     printf("A partir de aqui es el proceso main o proceso principal \n");
 
-    // Finaliza el programa correctamente
     return 0;
 }
