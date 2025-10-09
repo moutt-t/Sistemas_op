@@ -1,24 +1,49 @@
 /****************************************
-* Fecha: 07/10/2025
+* Fecha: 08/10/2025
 * Autor: Carolina Ujueta
 * Materia: Sistemas Operativos
 * Tema: Uso de la función FORK()
 *****************************************/
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>   // Biblioteca necesaria para usar fork() y getpid()
+#include <stdio.h>    // Biblioteca estándar de entrada/salida
+#include <stdlib.h>   // Biblioteca estándar (malloc, exit, etc.)
 
+/*
+ * Función principal del programa.
+ * Demuestra el uso básico de fork(), que se utiliza para crear procesos hijos.
+ * Cada vez que se llama a fork(), el proceso actual se duplica:
+ *  - El proceso padre recibe como valor de retorno el PID (ID del proceso) del hijo.
+ *  - El proceso hijo recibe como valor de retorno 0.
+ */
 int main (int argc, char *argv[]) {
-	printf("==> Inicio del proceso main o proceso principal <==\n\n");
-	int processID = fork();
 
-	if(processID>0){
-		printf("\t ==>Proceso Padre con ID %d \n", getpid());
-	} else {
-		printf("\t ==>Proceso Hijo con ID %d \n", getpid());
-	}
+    // Mensaje inicial indicando que el programa ha comenzado.
+    printf("==> Inicio del proceso main o proceso principal <==\n\n");
 
-	printf("A partir de aqui es el proceso main o proceso principal \n");
-	return 0;
+    // Se crea un nuevo proceso. fork() devuelve:
+    //  - >0 en el proceso padre (el valor es el PID del hijo)
+    //  - 0 en el proceso hijo
+    //  - -1 en caso de error
+    int processID = fork();
+
+    // Verificamos si estamos en el proceso padre o hijo
+    if (processID > 0) {
+        // Este bloque se ejecuta solo en el proceso padre
+        printf("\t ==> Proceso Padre con ID %d \n", getpid());
+    } else if (processID == 0) {
+        // Este bloque se ejecuta solo en el proceso hijo
+        printf("\t ==> Proceso Hijo con ID %d \n", getpid());
+    } else {
+        // En caso de error al crear el proceso
+        perror("Error al crear el proceso con fork");
+        exit(EXIT_FAILURE);
+    }
+
+    // Este mensaje será mostrado tanto por el padre como por el hijo,
+    // ya que después del fork, ambos procesos continúan ejecutando desde aquí.
+    printf("A partir de aqui es el proceso main o proceso principal \n");
+
+    // Finaliza el programa correctamente
+    return 0;
 }
