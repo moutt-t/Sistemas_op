@@ -1,1 +1,32 @@
+# 🧠 Prácticas de Sistemas Operativos — Uso de `fork()` en C
+
+Este repositorio contiene **tres programas en lenguaje C** que ilustran distintos usos de la llamada al sistema `fork()` y la comunicación entre procesos en sistemas tipo Unix/Linux.  
+Cada archivo corresponde a un ejemplo progresivo, desde la creación básica de procesos hasta la comunicación mediante **pipes**.
+
+---
+
+## 📂 Contenido
+
+| Archivo      | Descripción breve |
+|-------------|--------------------|
+| `fork.c`    | Ejemplo básico de creación de un proceso hijo usando `fork()`. |
+| `fork2.c`   | Demuestra cómo tanto el padre como el hijo ejecutan en paralelo el mismo código, generando salida intercalada. |
+| `fork3.c`   | Implementa comunicación entre procesos padre e hijo mediante una tubería (`pipe`). |
+
+---
+
+## 🧰 Requisitos
+
+- 🐧 **Sistema operativo:** Linux / macOS (o cualquier sistema POSIX compatible)  
+- 🧱 **Compilador C:** `gcc` u otro compatible  
+- 🧪 Terminal de comandos
+
+---
+
+## ⚡ Compilación
+
+Para compilar cualquiera de los programas:
+
+```bash
+gcc nombre_del_archivo.c -o nombre_del_programa
 
