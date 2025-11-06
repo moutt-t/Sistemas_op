@@ -1,0 +1,24 @@
+# ============================================================================
+# Makefile para Lab01 - Introducción a OpenMP
+# ============================================================================
+# Compila el programa que ejecuta hilos en paralelo usando OpenMP
+# ============================================================================
+
+# Nombre del ejecutable
+EXEC = Lab01
+
+# Compilador
+CC = gcc
+
+# Banderas para OpenMP
+CFLAGS = -fopenmp -Wall
+
+# Regla por defecto: compilar el programa
+all: $(EXEC)
+
+$(EXEC): Lab01.c
+	$(CC) $(CFLAGS) Lab01.c -o $(EXEC)
+
+# Regla de limpieza
+clean:
+	rm -f $(EXEC)
