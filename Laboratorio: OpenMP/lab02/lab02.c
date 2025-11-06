@@ -3,7 +3,7 @@
  Nombre del archivo : Lab02.c
  Autor              : Juan Pablo Motta Talero 
  Fecha              : 6/11/2025
- Descripción        : Laboratorio 01 - Introducción a OpenMP
+ Descripción        : Laboratorio 02 - Introducción a OpenMP
  ============================================================================
  Este programa demuestra el uso básico de OpenMP para la creación de hilos
  en paralelo. El usuario debe proporcionar como argumento el número de hilos
@@ -11,7 +11,7 @@
  indicando su número dentro del equipo de ejecución.
 
  Compilación:
-     gcc -fopenmp Lab01.c -o Lab01
+     gcc -fopenmp Lab02.c -o Lab02
  ============================================================================
 */
 
