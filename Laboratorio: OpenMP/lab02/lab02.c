@@ -1,6 +1,9 @@
 /*
  ============================================================================
  Nombre del archivo : Lab02.c
+ UNIVERSIDAD: Pontificia Universidad Javeriana
+ PROGRAMA: Ingeniería de Sistemas
+ MATERIA: Sistemas Operativos
  Autor              : Juan Pablo Motta Talero 
  Fecha              : 6/11/2025
  Descripción        : Laboratorio 02 - Introducción a OpenMP
