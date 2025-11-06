@@ -1,21 +1,47 @@
-include <omp.h>
+/*
+ ============================================================================
+ Nombre del archivo : Lab01.c
+ Autor              : Juan Pablo Motta Talero
+ Fecha              : 5/11/2025
+ Descripción        : Laboratorio 01 - Introducción a OpenMP
+ ============================================================================
+ Este programa demuestra el uso básico de OpenMP para la creación de hilos
+ en paralelo. El usuario debe proporcionar como argumento el número de hilos
+ con los cuales se desea ejecutar el programa. Cada hilo imprimirá un mensaje
+ indicando su número dentro del equipo de ejecución.
+
+ Compilación:
+     gcc -fopenmp Lab01.c -o Lab01
+ ============================================================================
+*/
+
+#include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (int argc, char *argv[]){
-        if(argc != 2){
-                printf( "ERROR\n\t $./ejecutable numHilos\n");
-                exit(0);
-        }
+int main (int argc, char *argv[]) {
+    // Verificación de argumentos
+    if (argc != 2) {
+        printf("ERROR\n\tUso: ./Lab01 numHilos\n");
+        exit(0);
+    }
 
-        int numHilos = (int) atoi(argv[1]);
-        int maxHilos = omp_get_max_threads();
-        printf("OpenMP ejecutando en cores =  %d hilos \n", omp_get_max_threads());
-        omp_set_num_threads(numHilos);
+    // Conversión del argumento a entero
+    int numHilos = atoi(argv[1]);
 
-        #pragma omp parallel
-        {
-        printf("Hello world desde el thread %d\n", omp_get_thread_num());
-        }
-        return 0;
+    // Obtener la cantidad máxima de hilos disponibles
+    int maxHilos = omp_get_max_threads();
+    printf("OpenMP ejecutando en cores = %d hilos disponibles\n", maxHilos);
+
+    // Establecer el número de hilos a utilizar
+    omp_set_num_threads(numHilos);
+
+    // Región paralela: cada hilo imprime su identificador
+    #pragma omp parallel
+    {
+        int id = omp_get_thread_num();
+        printf("Hola mundo desde el thread %d\n", id);
+    }
+
+    return 0;
 }
