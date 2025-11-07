@@ -15,7 +15,7 @@ CFLAGS = -fopenmp -Wall
 # Regla por defecto: compilar
 all: $(EXEC)
 
-$(EXEC): Lab02.c
+$(EXEC): lab02.c
 	$(CC) $(CFLAGS) lab02.c -o $(EXEC)
 
 # Limpieza de archivos compilados
