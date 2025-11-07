@@ -16,7 +16,7 @@ CFLAGS = -fopenmp -Wall
 # Regla por defecto: compilar el programa
 all: $(EXEC)
 
-$(EXEC): Lab01.c
+$(EXEC): lab01.c
 	$(CC) $(CFLAGS) lab01.c -o $(EXEC)
 
 # Regla de limpieza
