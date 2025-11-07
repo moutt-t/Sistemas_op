@@ -6,7 +6,7 @@
 # ============================================================
 
 # Nombre del ejecutable
-TARGET = Lab05
+TARGET = lab05
 
 # Compilador
 CC = gcc
@@ -15,7 +15,7 @@ CC = gcc
 CFLAGS = -fopenmp -Wall -lm
 
 # Archivo fuente
-SRC = Lab05.c
+SRC = lab05.c
 
 # ============================================================
 # Reglas principales
