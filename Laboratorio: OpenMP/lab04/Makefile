@@ -5,7 +5,7 @@
 # ============================================================================
 
 # Nombre del ejecutable
-EXEC = Lab04
+EXEC = lab04
 
 # Compilador
 CC = gcc
@@ -17,7 +17,7 @@ CFLAGS = -fopenmp -Wall
 all: $(EXEC)
 
 $(EXEC): Lab04.c
-	$(CC) $(CFLAGS) Lab04.c -o $(EXEC)
+	$(CC) $(CFLAGS) lab04.c -o $(EXEC)
 
 # Regla de limpieza
 clean:
