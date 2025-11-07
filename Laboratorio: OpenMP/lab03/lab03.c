@@ -31,7 +31,7 @@ int main() {
 
     // Región paralela con bucle for
     // 'i' y 'a' se declaran privadas: cada hilo tiene su propia copia
-    #pragma omp parallel for private(i) private(a)
+    #pragma omp parallel for private(i) firstprivate(a)
     for (i = 0; i < N; i++) {
         b = a + i;   // Cálculo local dentro de cada hilo
     }
