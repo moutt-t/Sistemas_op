@@ -16,7 +16,7 @@ CFLAGS = -fopenmp -Wall
 # Regla principal
 all: $(EXEC)
 
-$(EXEC): Lab03.c
+$(EXEC): lab03.c
 	$(CC) $(CFLAGS) lab03.c -o $(EXEC)
 
 # Regla de limpieza
