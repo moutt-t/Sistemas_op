@@ -1,20 +1,20 @@
-# 🧪 Laboratorios de Sistemas Operativos - Pontificia Universidad Javeriana
+#  Laboratorios de Sistemas Operativos - Pontificia Universidad Javeriana
 
-## 👨‍💻 Autor
+##  Autor
 **Nombre:** Juan Pablo Motta Talero  
 **Programa:** Ingeniería de Sistemas  
 **Materia:** Sistemas Operativos  
-**Fecha:** 6 de noviembre de 2025  
+**Fecha:** 11 de noviembre de 2025  
 
 ---
 
-## 📘 Descripción general
+##  Descripción general
 Este proyecto contiene dos laboratorios implementados en **lenguaje C**, enfocados en el manejo de **directorios, archivos y atributos del sistema operativo**.  
 Cada laboratorio aplica funciones del sistema UNIX/Linux como `opendir`, `readdir`, `stat`, y utiliza estructuras como `dirent` y `stat` para explorar y analizar archivos.
 
 ---
 
-## 📂 Contenido del proyecto
+##  Contenido del proyecto
 
 | Elemento | Descripción |
 |-----------|--------------|
@@ -26,10 +26,10 @@ Cada laboratorio aplica funciones del sistema UNIX/Linux como `opendir`, `readdi
 
 ---
 
-## 🧱 Estructura de carpetas
+##  Estructura de carpetas
 
 ```
-📁 Proyecto-Sistemas-Operativos/
+ Proyecto-Sistemas-Operativos/
 │
 ├── Lab01.c
 ├── Lab02.c
@@ -41,7 +41,7 @@ Cada laboratorio aplica funciones del sistema UNIX/Linux como `opendir`, `readdi
 
 ---
 
-## ⚙️ Requisitos previos
+##  Requisitos previos
 Antes de compilar o ejecutar los laboratorios, asegúrate de tener:
 - Sistema operativo **Linux** o **macOS**.
 - Compilador **GCC** instalado.
@@ -55,7 +55,7 @@ make --version
 
 ---
 
-## 🏗️ Compilación
+##  Compilación
 
 Para compilar **ambos laboratorios**:
 ```bash
@@ -68,17 +68,9 @@ lab01
 lab02
 ```
 
-También puedes compilar individualmente:
-```bash
-make lab01   # Solo compila Lab01
-make lab02   # Solo compila Lab02
-```
+##  Ejecución
 
----
-
-## ▶️ Ejecución
-
-### 🧩 **Ejecutar el Laboratorio 01**
+###  **Ejecutar el Laboratorio 01**
 ```bash
 make run1
 ```
@@ -103,7 +95,7 @@ Nombre: hola.txt   | Tamaño: 12 bytes
 
 ---
 
-### 🧠 **Ejecutar el Laboratorio 02**
+###  **Ejecutar el Laboratorio 02**
 ```bash
 make run2
 ```
@@ -139,7 +131,7 @@ Tiempo en segundos: 1731335702
 
 ---
 
-## 📁 Carpeta de prueba
+##  Carpeta de prueba
 
 La carpeta **`prueba/`** contiene el archivo de texto `hola.txt`, utilizado para verificar que los programas leen correctamente los archivos del sistema.
 
@@ -152,7 +144,7 @@ Puedes modificarlo o agregar más archivos a esta carpeta para probar el comport
 
 ---
 
-## 🧹 Limpieza y recompilación
+##  Limpieza y recompilación
 
 Eliminar los ejecutables:
 ```bash
@@ -166,7 +158,7 @@ make rebuild
 
 ---
 
-## 🧠 Conceptos aplicados
+##  Conceptos aplicados
 
 ### **Lab01**
 - Lectura de directorios con `opendir()` y `readdir()`.
@@ -181,13 +173,8 @@ make rebuild
 
 ---
 
-## 🏁 Conclusión
+## Conclusión
 Estos laboratorios permiten comprender el manejo de directorios y archivos desde el lenguaje C en un entorno UNIX/Linux.  
 Además, refuerzan la aplicación de funciones del sistema operativo, la manipulación de estructuras y el control de permisos y tiempos en archivos reales.
 
----
 
-## 📚 Créditos
-**Autor:** Juan Pablo Motta Talero  
-**Pontificia Universidad Javeriana**  
-**Ingeniería de Sistemas – 2025**
