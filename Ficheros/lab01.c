@@ -5,7 +5,7 @@
  PROGRAMA           : Ingeniería de Sistemas
  MATERIA            : Sistemas Operativos
  Autor              : Juan Pablo Motta Talero
- Fecha              : 6/11/2025
+ Fecha              : 11/11/2025
  Descripción        : Laboratorio 01 - Manejo de directorios en C
  ============================================================================
  Objetivo:
