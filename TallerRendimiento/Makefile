@@ -1,6 +1,6 @@
 #===============================================================================
 #  Makefile para la compilación de programas de Multiplicación de Matrices
-#  Autor: J. Corredor, PhD (adaptado y organizado por Carolina Ujueta Ricardo)
+#  Autor: J. Corredor, PhD (adaptado y organizado por Juan Pablo Motta )
 #  Fecha: 13 Noviembre 2025
 #===============================================================================
 
