@@ -1,6 +1,6 @@
 /************************************************************************************************************/
 /*  ARCHIVO: mmClasicaPthread.h                                                                             */
-/*  AUTOR:  J. Corredor, PhD (documentado por Carolina Ujueta Ricardo, estudiante de Ingeniería de Sistemas)*/
+/*  AUTOR:  J. Corredor, PhD (documentado por Juan Pablo Motta, estudiante de Ingeniería de Sistemas)*/
 /*  FECHA:  13 Noviembre 2025                                                                               */
 /*                                                                                                          */
 /*  DESCRIPCIÓN:                                                                                            */
